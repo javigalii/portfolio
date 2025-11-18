@@ -220,13 +220,6 @@ Este proyecto está bajo la Licencia MIT. Eres libre de usar, modificar y distri
 - 🐙 GitHub: [@javigalii](https://github.com/javigalii)
 - 💼 LinkedIn: [franciscojaviergalian](https://linkedin.com/in/franciscojaviergalian)
 
-## 🙏 Agradecimientos
-
-- Font Awesome por los iconos
-- Google Fonts por la tipografía Montserrat
-- CESUR por la formación en DAW
-- OpenWebinars por los cursos especializados
-
 ---
 
 ⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!
