@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JGP - Mi Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">JGP</div>
+        <nav>
+          <ul>
+            <li><a href="#inicio">Home</a></li>
+            <li><a href="#sobre-mi">About</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="inicio" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-image">
+            <!-- INSERTA TU FOTO DE PERFIL AQUÍ -->
+            <img src="/img/foto.jpg" alt="Foto de perfil JGP" />
+          </div>
+          <div class="hero-text">
+            <p class="greeting">Hola! soy <span>Javier Galián...</span></p>
+            <h1 class="name">Un desarrollador que</h1>
+            <h2 class="tagline">
+              Juzga un libro<br />por su <span>portada...</span>
+            </h2>
+            <p
+              style="
+                color: var(--text-light);
+                font-size: 0.95em;
+                margin-top: 15px;
+              "
+            >
+              ¿Por qué si la portada no imporesiona que otras cosas lo harán?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+      <div class="container about-content">
+        <h2 class="section-title">Soy Desarrollador Web</h2>
+
+        <p class="about-subtitle">
+          Actualmente estoy en
+          <span class="highlight">busqueda de empleo</span>
+        </p>
+
+        <p class="about-text">
+          Graduado en Desarrollo de Aplicaciones Web, apasionado por crear
+          experiencias digitales modernas y eficientes que conecten las
+          necesidades del usuario con soluciones prácticas y estéticas.
+        </p>
+      </div>
+    </section>
+
+    <section class="education">
+      <div class="container">
+        <h2 class="section-title">Formación</h2>
+
+        <div class="courses-grid">
+          <div class="course-item">
+            <!-- INSERTA IMAGEN CESUR AQUÍ -->
+            <img
+              src="/img/cesur.png"
+              alt="CESUR DAW"
+              style="
+                width: 280px;
+                margin: 0 auto 25px;
+                border-radius: 12px;
+                object-fit: cover;
+              "
+            />
+            <h3>DAW en CESUR</h3>
+            <p>
+              Desarrollo de Aplicaciones Web donde aprendí las bases del
+              desarrollo front-end y back-end...
+            </p>
+          </div>
+          <div class="course-item">
+            <!-- INSERTA IMAGEN REACT AQUÍ -->
+            <img
+              src="/img/react.png"
+              alt="React"
+              style="
+                width: 130px;
+                margin: 0 auto 25px;
+                border-radius: 12px;
+                object-fit: cover;
+              "
+            />
+            <h3>Curso React OpenWebinars</h3>
+            <p>Front-end Development</p>
+          </div>
+          <div class="course-item">
+            <!-- INSERTA IMAGEN ANGULAR AQUÍ -->
+            <img
+              src="/img/angular.png"
+              alt="Angular"
+              style="
+                width: 130px;
+                margin: 0 auto 25px;
+                border-radius: 12px;
+                object-fit: cover;
+              "
+            />
+            <h3>Curso Angular OpenWebinars</h3>
+            <p>Front-end Development</p>
+          </div>
+          <div class="course-item">
+            <!-- INSERTA IMAGEN LARAVEL AQUÍ -->
+            <img
+              src="/img/laravel.png"
+              alt="Laravel"
+              style="
+                width: 130px;
+                margin: 0 auto 25px;
+                border-radius: 12px;
+                object-fit: cover;
+              "
+            />
+            <h3>Curso Laravel OpenWebinars</h3>
+            <p>Back-end Development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tech-stack">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="tech-icons">
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/java.png" alt="java" /></div>
+              <div class="back">Java</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/js.png" alt="js" /></div>
+              <div class="back">JavaScript</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/php.png" alt="php" /></div>
+              <div class="back">PHP</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/python.png" alt="python" />
+              </div>
+              <div class="back">Python</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/html.png" alt="html" /></div>
+              <div class="back">HTML</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/css.png" alt="css" /></div>
+              <div class="back">CSS</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/bootstrap.png" alt="bootstrap" />
+              </div>
+              <div class="back">Bootstrap</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/react.png" alt="react" /></div>
+              <div class="back">React</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/angular.png" alt="angular" />
+              </div>
+              <div class="back">Angular</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/laravel.png" alt="laravel" />
+              </div>
+              <div class="back">Laravel</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/mysql.png" alt="mysql" /></div>
+              <div class="back">MySQL</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/mariadb.png" alt="mariadb" />
+              </div>
+              <div class="back">MariaDB</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/oracle.png" alt="oracle" />
+              </div>
+              <div class="back">Oracle</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/xml.png" alt="xml" /></div>
+              <div class="back">XML</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/spring.png" alt="springboot" />
+              </div>
+              <div class="back">Spring Boot</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/eclipse.png" alt="eclipse" />
+              </div>
+              <div class="back">Eclipse</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/vscode.png" alt="vscode" />
+              </div>
+              <div class="back">VS Code</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/intellij.png" alt="intellij" />
+              </div>
+              <div class="back">IntelliJ</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/github.png" alt="github" />
+              </div>
+              <div class="back">GitHub</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/git.png" alt="git" /></div>
+              <div class="back">Git</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/linux.png" alt="linux" /></div>
+              <div class="back">Linux</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front">
+                <img src="/img/virtualbox.png" alt="virtualbox" />
+              </div>
+              <div class="back">VirtualBox</div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="front"><img src="/img/Figma.svg" alt="figma" /></div>
+              <div class="back">Figma</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <h2 class="section-title">Proyectos</h2>
+        <!-- Checkbox oculto (debe ir antes del grid para que funcione el flip) -->
+        <input type="checkbox" id="toggle-proyectos" hidden />
+
+        <!-- Grid de proyectos -->
+        <div class="projects-grid">
+          <!-- PROYECTO 1 -->
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-front">
+                <div class="img-area">
+                  <img src="/img/pokemon.jpg" alt="Proyecto Juego Pokémon" />
+                </div>
+                <h3>Juego Pokemon</h3>
+                <p>
+                  Desarrollé un juego inspirado en Pokemon con JavaFX y SQLite
+                  que incluye lucha, combates, captura y almacenamiento. Apliqué
+                  POO, gestión de base de datos y lógica del juego.
+                </p>
+              </div>
+              <div class="project-back">
+                <div class="img-area"><!-- nueva imagen --></div>
+                <h3>Proyecto Alternativo 1</h3>
+                <p>Aquí irá la descripción del proyecto alternativo 1.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROYECTO 2 -->
+          <div class="project-card">
+            <div class="project-inner">
+              <div class="project-front">
+                <div class="img-area">
+                  <img
+                    src="/img/perros.jpg"
+                    alt="Proyecto Adopción de Perros"
+                  />
+                </div>
+                <h3>Adopción Perros</h3>
+                <p>
+                  Desarrollé un sistema de adopción de mascotas usando Spring
+                  Boot y MySQL. Gestión de usuarios, CRUD de animales, reservas
+                  y blog.
+                </p>
+              </div>
+              <div class="project-back">
+                <div class="img-area"><!-- nueva imagen --></div>
+                <h3>Proyecto Alternativo 2</h3>
+                <p>Aquí irá la descripción del proyecto alternativo 2.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botón visible para activar el flip -->
+        <label for="toggle-proyectos" class="btn-vermas"
+          >Ver más proyectos</label
+        >
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact-info">
+          <p>
+            Actualmente busco formar parte de un
+            <span style="color: var(--primary-color)">equipo de desarrollo</span
+            >.<br />Si crees que puedo encajar bien, te animo a mirar mis
+            proyectos y contactarme con cualquier pregunta o feedback.
+          </p>
+          <div class="social-links">
+            <a href="mailto:galianpinerojavier@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a href="https://github.com/javigalii" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://linkedin.com/in/franciscojaviergalian"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <p class="copyright">&copy; 2025 Francisco Javier Galián Piñero</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
