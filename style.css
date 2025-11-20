@@ -1005,4 +1005,19 @@ body.light-mode .social-links a {
       font-size: 1em;
     }
   }
+  .cv-btn {
+    background-color: var(--primary-color);
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 0.3s;
+  }
+
+  .cv-btn:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+  }
 }
