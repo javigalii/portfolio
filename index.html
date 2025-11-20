@@ -32,17 +32,63 @@
           <ul>
             <li><a href="#inicio">Home</a></li>
             <li><a href="#sobre-mi">About</a></li>
+            <li><a href="#educacion">Formación</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
           </ul>
         </nav>
+        <!-- Botón de modo claro/oscuro -->
+        <button id="theme-toggle" class="theme-toggle" title="Cambiar tema">
+          <i class="fas fa-moon"></i>
+        </button>
       </div>
     </header>
+
+    <!-- JAVASCRIPT PARA EL MODO CLARO -->
+    <script>
+      // Obtener el botón y el tema guardado
+      const themeToggle = document.getElementById("theme-toggle");
+      const html = document.documentElement;
+      const savedTheme = localStorage.getItem("theme") || "dark";
+
+      // Aplicar tema guardado
+      if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        document.body.classList.remove("light-mode");
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      }
+
+      // Event listener para cambiar tema
+      themeToggle.addEventListener("click", () => {
+        const isLight = document.body.classList.toggle("light-mode");
+
+        // Guardar preferencia
+        localStorage.setItem("theme", isLight ? "light" : "dark");
+
+        // Cambiar icono
+        themeToggle.innerHTML = isLight
+          ? '<i class="fas fa-sun"></i>'
+          : '<i class="fas fa-moon"></i>';
+      });
+
+      // Respetar preferencia del sistema
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: light)").matches
+      ) {
+        if (!localStorage.getItem("theme")) {
+          document.body.classList.add("light-mode");
+          themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+      }
+    </script>
 
     <section id="inicio" class="hero">
       <div class="container">
         <div class="hero-content">
           <div class="hero-image">
-            <!-- INSERTA TU FOTO DE PERFIL AQUÍ -->
             <img src="/portfolio/img/foto.jpg" alt="Foto de perfil JGP" />
           </div>
           <div class="hero-text">
@@ -82,13 +128,12 @@
       </div>
     </section>
 
-    <section class="education">
+    <section class="education" id="educacion">
       <div class="container">
         <h2 class="section-title">Formación</h2>
 
         <div class="courses-grid">
           <div class="course-item">
-            <!-- INSERTA IMAGEN CESUR AQUÍ -->
             <img
               src="/portfolio/img/cesur.png"
               alt="CESUR DAW"
@@ -106,7 +151,6 @@
             </p>
           </div>
           <div class="course-item">
-            <!-- INSERTA IMAGEN REACT AQUÍ -->
             <img
               src="/portfolio/img/react.png"
               alt="React"
@@ -121,7 +165,6 @@
             <p>Front-end Development</p>
           </div>
           <div class="course-item">
-            <!-- INSERTA IMAGEN ANGULAR AQUÍ -->
             <img
               src="/portfolio/img/angular.png"
               alt="Angular"
@@ -136,7 +179,6 @@
             <p>Front-end Development</p>
           </div>
           <div class="course-item">
-            <!-- INSERTA IMAGEN LARAVEL AQUÍ -->
             <img
               src="/portfolio/img/laravel.png"
               alt="Laravel"
@@ -154,7 +196,7 @@
       </div>
     </section>
 
-    <section class="tech-stack">
+    <section class="tech-stack" id="skills">
       <div class="container">
         <h2 class="section-title">Skills</h2>
 
@@ -377,7 +419,6 @@
 
         <!-- Grid de proyectos -->
         <div class="projects-grid">
-          <!-- PROYECTO 1 -->
           <div class="project-card">
             <div class="project-inner">
               <div class="project-front">
@@ -408,7 +449,6 @@
             </div>
           </div>
 
-          <!-- PROYECTO 2 -->
           <div class="project-card">
             <div class="project-inner">
               <div class="project-front">
