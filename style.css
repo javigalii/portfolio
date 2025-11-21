@@ -681,8 +681,8 @@ body.light-mode .social-links a {
   display: inline-block;
   background: linear-gradient(
     135deg,
-    var(--primary-color),
-    var(--secondary-color)
+    rgba(45, 131, 230, 0.322) 0%,
+    rgba(18, 80, 214, 0.521) 100%
   );
   color: #fff;
   padding: 15px 40px;
