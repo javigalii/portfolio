@@ -485,7 +485,7 @@ body.light-mode .social-links a {
   border-radius: 12px;
   font-size: 1.1em;
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
   overflow: hidden;
 }
 
