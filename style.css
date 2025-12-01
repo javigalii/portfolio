@@ -10,6 +10,7 @@
   --font-family: "Montserrat", sans-serif;
 }
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -139,7 +140,7 @@ ul {
   transform: rotate(20deg);
 }
 
-/* TEMA CLARO */
+/* Tema claro */
 body.light-mode {
   --background-dark: #f5f5f5;
   --background-medium: #ffffff;
@@ -415,7 +416,7 @@ body.light-mode .social-links a {
   font-size: 0.95em;
 }
 
-/* SKILLS-Section */
+/* Skills Section */
 .tech-stack {
   padding: 120px 0;
   background: var(--background-dark);
@@ -515,6 +516,7 @@ body.light-mode .social-links a {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* Logo animado */
 .jgp-logo-centered {
   position: relative;
   width: 280px;
@@ -754,7 +756,7 @@ body.light-mode .social-links a {
   font-size: 0.9em;
 }
 
-/* Media Queries */
+/* MEDIA QUERIES */
 @media (max-width: 992px) {
   .hero-content {
     flex-direction: column;
@@ -842,27 +844,16 @@ body.light-mode .social-links a {
   .project-back p {
     font-size: 0.9em;
   }
-  #educacion {
-    scroll-margin-top: 80px;
-  }
 
-  #skills {
-    scroll-margin-top: 80px;
-  }
-
-  #proyectos {
-    scroll-margin-top: 80px;
-  }
-
-  #inicio {
-    scroll-margin-top: 80px;
-  }
-
+  #educacion,
+  #skills,
+  #proyectos,
+  #inicio,
   #sobre-mi {
     scroll-margin-top: 80px;
   }
 
-  /* BOTÓN THEME TOGGLE */
+  /* Botón Theme Toggle */
   .theme-toggle {
     width: 45px;
     height: 45px;
@@ -889,7 +880,7 @@ body.light-mode .social-links a {
     transition: transform 0.3s ease;
   }
 
-  /* TEMA CLARO */
+  /* Tema claro */
   body.light-mode {
     --background-dark: #f5f5f5;
     --background-medium: #ffffff;
@@ -980,9 +971,8 @@ body.light-mode .social-links a {
     border: 1px solid rgba(74, 144, 226, 0.3);
   }
 
-  /* Animación del icono */
   body.light-mode .theme-toggle i::before {
-    content: "\f186"; /* Icono de sol */
+    content: "\f186";
   }
 
   body .theme-toggle i {
@@ -1005,6 +995,7 @@ body.light-mode .social-links a {
       font-size: 1em;
     }
   }
+
   .cv-btn {
     background-color: var(--primary-color);
     padding: 10px 16px;
