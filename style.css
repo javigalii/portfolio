@@ -64,9 +64,9 @@ ul {
   background-color: var(--background-dark);
   padding: 20px 0;
   position: fixed;
-  width: 100%;
+  width: 1000%;
   top: 0;
-  z-index: 1000;
+  z-index: 100;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   transition: all 0.3s ease;
 }
@@ -114,7 +114,7 @@ ul {
 }
 
 .navbar nav ul li a:hover::after {
-  width: 1000%;
+  width: 100%;
 }
 
 /* BOTÓN THEME TOGGLE */
