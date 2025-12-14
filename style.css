@@ -882,3 +882,111 @@ body.light-mode .social-links a {
     transform: scale(1.05);
   }
 }
+
+/* --- ESTILOS DE ESCRITORIO (Ajustes para el nuevo HTML) --- */
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cv-btn {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff !important; /* Importante para sobrescribir color de enlaces */
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: 0.3s;
+  white-space: nowrap; /* Evita que el texto se rompa */
+}
+
+.cv-btn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+/* Ocultar hamburguesa en escritorio */
+.menu-toggle {
+  display: none;
+}
+
+/* --- ESTILOS MÓVIL (Menú Hamburguesa) --- */
+@media (max-width: 768px) {
+  
+  /* 1. Ajustes del contenedor principal */
+  .navbar .container {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  /* 2. Botón Hamburguesa visible */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    z-index: 1001; /* Por encima del menú desplegado */
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--text-color);
+    border-radius: 2px;
+  }
+
+  /* 3. El Menú Desplegable (Oculto por defecto) */
+  .navbar nav {
+    position: fixed;
+    top: -100%; /* Escondido arriba */
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--background-dark);
+    padding: 80px 0 40px 0; /* Espacio superior para no tapar el logo */
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* Clase activa para mostrar el menú */
+  .navbar nav.active {
+    top: 0;
+  }
+
+  /* Lista vertical */
+  .navbar nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .navbar nav ul li a {
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  /* Botón CV en móvil */
+  .cv-btn {
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Animación de la hamburguesa (se convierte en X) */
+  .menu-toggle.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-toggle.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
