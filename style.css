@@ -899,6 +899,7 @@ body.light-mode .social-links a {
   font-size: 0.9em;
   transition: 0.3s;
   white-space: nowrap; /* Evita que el texto se rompa */
+  margin-left: 15%;
 }
 
 .cv-btn:hover {
