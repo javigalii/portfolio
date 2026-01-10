@@ -856,7 +856,6 @@ body.light-mode .social-links a {
     transition: transform 0.3s ease;
   }
 
-  /* Fixes para iconos específicos si es necesario */
   body.light-mode .theme-toggle i::before {
     content: "\f186";
   }
@@ -865,7 +864,6 @@ body.light-mode .social-links a {
     content: "\f186";
   }
 
-  /* Estilos específicos que aparecían al final */
   .cv-btn {
     background-color: var(--primary-color);
     padding: 10px 16px;
